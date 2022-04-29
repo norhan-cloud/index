@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="fontawesome-free-6.0.0-beta3-web/css/fontawesome.css" rel="stylesheet">
+        <link href="fontawesome-free-6.0.0-beta3-web/css/brands.css" rel="stylesheet">
+        <link href="fontawesome-free-6.0.0-beta3-web/css/solid.css" rel="stylesheet">
+        <link href="fontawesome-free-6.0.0-beta3-web/css/regular.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900|Roboto&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="fonts/icomoon/style.css">
+    
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="css/aos.css">
+    
+        <!-- MAIN CSS -->
+       
+    
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    
+       
+     
+</head>
+<style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    .carousel-control-next{
+      margin-top: 15rem;
+      right: 10px;
+    background-color: #ebbe1b;
+    font-size: 20px;
+    border-radius: 3px;
+    width: 44px;
+    height: 43px;
+    line-height: 42px;
+    display: inline-block;
+    }
+ 
+    .carousel-control-prev{
+      margin-top: 15rem;
+      left: 10px;
+    background-color: #ebbe1b;
+    font-size: 20px;
+    border-radius: 3px;
+    width: 44px;
+    height: 43px;
+    line-height: 42px;
+    display: inline-block;
+    }
+    .carousel-item{
+      max-height: 500px;
+    }
+    .navbar {
+    width: 100%;
+    background: #fff;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 38px;
+
+}
+.navbar ul{
+  list-style: none;
+  margin: 0 auto;
+  padding:0;
+}
+.navbar ul li{
+  color: #555555;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: Arial;
+  transition: 0.5s;
+  position: relative;
+  padding:0 20px;
+}
+.navbar ul li:nth-child(6){
+  background: #ebbe1b;
+}
+.navbar ul li:hover:not(.active){
+  background: #ebbe1b;
+}
+.togglesearch{
+  background: #E8E8E4;
+  position: absolute;
+  top: 54px;
+  right: 28.7%;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #ebbe1b;
+  display: none;
+}
+.togglesearch:before{
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #ebbe1b;
+}
+.togglesearch input[type="text"]{
+  width: 200px;
+  padding: 5px 10px;
+  margin-left: 23px;
+  border: 1px solid #ebbe1b;
+  outline: none;
+  height: 32px;
+
+}
+button{
+  width: 80px;
+  background: #ebbe1b;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #ebbe1b;
+  outline: none;
+  cursor: pointer;
+  height: 33px;
+
+}
+.inputText{
+  float: left;
+  margin-left: 9px;
+}
+.inputSearch{
+  float: right;
+  margin-right: 38px;
+  margin-top: 14px;
+
+}
+.headerLogo{
+  padding-top: 11px;
+  
+}
+ul a{
+  text-decoration: none;
+}
+   
+@media only screen and (min-width:240px) and (max-width: 768px){
+    .navbar ul li{
+        float:none;
+        display:block;
+        text-align:center;
+        margin:0 auto;
+    }
+    .navbar{
+      margin-left: 7px;
+    }
+    .headerLogo{
+      display: none;
+    }
+    .socialMedia{
+      display: none;
+    }
+    .carousel-item {
+      max-height: 200px;
+    }
+    .carousel-control-prev{
+      margin-top: 83px;
+    background-color: #ebbe1b;
+    font-size: 20px;
+    border-radius: 3px;
+    width: 44px;
+    height: 43px;
+    line-height: 42px;
+    display: inline-block;
+    left: 10px;
+    }
+    .carousel-control-next{
+      right: 10px;
+      margin-top: 83px;
+    background-color: #ebbe1b;
+    font-size: 20px;
+    border-radius: 3px;
+    width: 44px;
+    height: 43px;
+    line-height: 42px;
+    display: inline-block;
+    }
+}
+.socialMedia{
+  margin-top: 18px;
+  margin-left: 122px;
+
+
+}
+.socialMedia a{
+  padding: 6px;
+  color: #232323;
+  font-size: 23px;
+}
+.socialMedia a:hover{
+  color: #ebbe1b;
+}
+
+</style>
+<body>
+  
+  <div class=" auto-container">
+  <div class="row">
+    <div class="col-lg-2">
+          <img src="img/logo.png" class="headerLogo">
+    </div>
+    <div class="col-lg-7">
+      <div class="navbar" >
+        
+        <ul>
+          <a href="#"><li>home</li></a>
+          <a href="decor.html"><li>decore</li></a>
+          <a href="factor.html"><li>factors</li></a>
+
+          <a href="finishing.html"><li>finishing</li></a>
+          <a href="contact.html"><li>contact</li></a>
+          <li class="searchbar">
+            <i class="fas fa-search"></i>
+               <div class="togglesearch">
+                 <div class="inputText">
+                  <input type="text" placeholder=""/></div>
+                 <div class="inputSearch"> <button>search</button></div>
+              </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="socialMedia">
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-pinterest-p"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="overlay-carousel">
+          <h1> Egy Care</h1>
+          <p>Lorem ipsum dolor sit amet dolor sit amet quaerat unde sunt</p>
+          <a>Click Me!</a>
+        </div>
+        <img src="img/post9.jpeg" alt="Los Angeles" width="1100" height="500">
+       
+      </div>
+      <div class="carousel-item">
+        <div class="overlay-carousel">
+          <h1> Egy Care</h1>
+          <p>Lorem ipsum dolor sit amet dolor sit amet quaerat unde sunt</p>
+          <a>Click Me!</a>
+        </div>
+        <img src="img/post7.jpeg" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <div class="overlay-carousel">
+          <h1> Egy Care</h1>
+          <p>Lorem ipsum dolor sit amet dolor sit amet quaerat unde sunt</p>
+          <a>Click Me!</a>
+        </div>
+        <img src="img/post6.jpeg" alt="New York" width="1100" height="500">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+
+
+  <div class="site-section">
+    <div class="auto-container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-7">
+          <h2 class="heading-39291 mb-0">Our Work</h2>
+        </div>
+        <div class="col-md-5 text-right">
+          <p class="mb-0"><a href="#" class="more-39291">View All Works</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="media-02819">
+            <a href="#" class="img-link"><img src="img/img_1.jpg" alt="Image" class="img-fluid"></a>
+            <h3><a href="#">Creative Modern House</a></h3>
+            <span>New York City, USA</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="media-02819">
+            <a href="#" class="img-link"><img src="img/img_2.jpg" alt="Image" class="img-fluid"></a>
+            <h3><a href="#">Creative Modern House</a></h3>
+            <span>New York City, USA</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="media-02819">
+            <a href="#" class="img-link"><img src="img/img_3.jpg" alt="Image" class="img-fluid"></a>
+            <h3><a href="#">Creative Modern House</a></h3>
+            <span>New York City, USA</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="media-02819">
+            <a href="#" class="img-link"><img src="img/img_4.jpg" alt="Image" class="img-fluid"></a>
+            <h3><a href="#">Creative Modern House</a></h3>
+            <span>New York City, USA</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+<section class="text-center icons">
+  <h1> vim prompta facilisi interesset te</h1>
+  <p>Convenire gubergren ex vix. Habeo facete pri</p>
+  <hr class="hr5">
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-1">
+        <i class="far fa-check-circle"></i>
+        <div>
+          <h3>vix Habeo facete pri</h3>
+          <p>Convenire gubergren ex vix. Habeo fa
+            Convenire gubergren ex vix. Habeo fa
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-1">
+        <i class="fas fa-hard-hat"></i>
+        <div>
+          <h3>vix Habeo facete pri</h3>
+          <p>Convenire gubergren ex vix. Habeo fa
+            Convenire gubergren ex vix. Habeo fa
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-1">
+        <i class="fas fa-paint-brush"></i>        <div>
+          <h3>vix Habeo facete pri</h3>
+          <p>Convenire gubergren ex vix. Habeo fa
+            Convenire gubergren ex vix. Habeo fa
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-1">
+        <i class="far fa-smile"></i>
+          <div>
+          <h3>vix Habeo facete pri</h3>
+          <p>Convenire gubergren ex vix. Habeo fa
+            Convenire gubergren ex vix. Habeo fa
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-1">
+        <i class="far fa-calendar-check"></i>
+        <div>
+          <h3>vix Habeo facete pri</h3>
+          <p>Convenire gubergren ex vix. Habeo fa
+            Convenire gubergren ex vix. Habeo fa
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-1">
+        <i class="far fa-eye"></i>
+      <div>
+          <h3>vix Habeo facete pri</h3>
+          <p>Convenire gubergren ex vix. Habeo fa
+            Convenire gubergren ex vix. Habeo fa
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="story-section">
+  <div class="auto-container">
+    
+    <!-- Story Block -->
+    <div class="story-block">
+      <div class="pattern-layer" style="background-image:url(img/pattern-3.png)"></div>
+      <div class="inner-box">
+        <div class="clearfix">
+          
+          <!-- Image Column -->
+          <div class="image-column col-lg-6 col-md-12 col-sm-12">
+            <div class="inner-column wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
+              <div class="image">
+                <img src="img/story-1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Content Column -->
+          <div class="content-column col-lg-6 col-md-12 col-sm-12">
+            <!-- Sec Title -->
+            <div class="sec-title">
+              <div class="inner-title">
+                <div class="title">story of Intenax</div>
+                <h2>Power of Decysions.</h2>
+              </div>
+            </div>
+            <div class="inner-column wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
+              <div class="text">
+                <p>Convenire gubergren ex vix. Habeo facete pri ei. Putent maluisset intellegam vix te, vim prompta facilisi interesset te. An denique praesent pro, in <span>torquatos adipiscing pro,</span> pro no odio modus. Mea malis summo ut. Ex ipsum dolore assueverit nec, facer imperdiet et duo, cu postea laoreet vulputate has.</p>
+                <p>Beyond more stoic this along goodness hey this this wow manatee mongoose one as since a far flustered impressive manifest far crud opened inside owing punitively around</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Story Block Two -->
+    <div class="story-block-two">
+      <div class="pattern-layer" style="background-image:url(img/pattern-3.png)"></div>
+      <div class="inner-box">
+        <div class="clearfix">
+          
+          <!-- Image Column -->
+          <div class="image-column col-lg-6 col-md-12 col-sm-12">
+            <div class="inner-column wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
+              <div class="image">
+                <img src="img/story-2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Content Column -->
+          <div class="content-column col-lg-6 col-md-12 col-sm-12">
+            <!-- Sec Title -->
+            <div class="sec-title">
+              <div class="inner-title">
+                <div class="title">story of Intenax</div>
+                <h2>Strength of Planning .</h2>
+              </div>
+            </div>
+            <div class="inner-column wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
+              <div class="text">
+                <p>Convenire gubergren ex vix. Habeo facete pri ei. Putent maluisset intellegam vix te, vim prompta facilisi interesset te. An denique praesent pro, in torquatos <strong>adipiscing pro pro no odio modus.</strong> Mea malis summo ut. Ex ipsum dolore assueverit nec, facer imperdiet et duo, cu postea laoreet vulputate has.</p>
+                <p>Beyond <span>more stoic this along goodness hey</span> this this wow manatee mongoose one as since a far flustered impressive manifest far crud opened inside owing punitively around</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<section class="counter-section">
+  <div class="pattern-layer" style="background-image:url(img/pattern-5.png)"></div>
+  <div class="auto-container">
+    <!-- Sec Title -->
+    <div class="sec-title centered">
+      <div class="inner-title">
+        <div class="title">Quality of work</div>
+        <h2>Stats And Numbers.</h2>
+      </div>
+    </div>
+    
+    <div class="clearfix">
+      
+      <!-- Counter Block -->
+      <div class="counter-block col-lg-3 col-md-6 col-sm-12">
+        <div class="inner-box row">
+          <div class="image">
+            <a href="#"><img src="img/counter-1.jpg" alt=""></a>
+          </div>
+          <div class="content-box">
+            <div class="count-box counted">
+              <span class="count-text num"  data-goal="310">0</span>
+            </div>
+            <div class="text">projects completed</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Counter Block -->
+      <div class="counter-block col-lg-3 col-md-6 col-sm-12">
+        <div class="inner-box row">
+          <div class="content-box">
+            <div class="count-box counted">
+              <span class="count-text num"  data-goal="16">0</span>
+            </div>
+            <div class="text">crazy thinkers</div>
+          </div>
+          <div class="image">
+            <a href="#"><img src="img/counter-2.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Counter Block -->
+      <div class="counter-block col-lg-3 col-md-6 col-sm-12">
+        <div class="inner-box row">
+          <div class="image">
+            <a href="#"><img src="img/counter-3.jpg" alt=""></a>
+          </div>
+          <div class="content-box">
+            <div class="count-box counted">
+              <span class="count-text num" data-speed="30" data-goal="25">0</span>
+            </div>
+            <div class="text">Years of expertise</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Counter Block -->
+      <div class="counter-block col-lg-3 col-md-6 col-sm-12">
+        <div class="inner-box row">
+          <div class="content-box">
+            <div class="count-box counted">
+              <span class="count-text num" data-speed="30" data-goal="7">0</span>K
+            </div>
+            <div class="text">hours of work</div>
+          </div>
+          <div class="image">
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+<section class="painters">
+<div class="auto-container marginTop">
+  <div class="row">
+      <div class="col-lg-4 col-md-1">
+          <h2 class="finishingh2">pla po uyyg jhgg bvvccc</h2>
+          <hr>
+          <p class="finishing">Convenire gubergren ex vix. Habeo facete pri ei. Putent
+               maluisset intellegam vix te, vim prompta facilisi interesset te. 
+               Convenire gubergren ex vix. Habeo facete pri ei.
+                Putent maluisset intellegam vix 
+                 <br><br>
+                 vim prompta facilisi interesset te. 
+                 An denique praesent pro, in torquatos adipiscing pro pro no odio modus. Mea malis summo ut.
+                Ex ipsum dolore assueverit nec, facer imperdiet et duo, cu postea laoreet vulputate has.
+              </p>
+      </div>
+      <div class="col-lg-4 col-md-1"><img src="img/factor.jpg " class="painter"></div>
+      <div class="col-lg-4 col-md-1">
+          <h2 class="finishingh2">pla po uyyg jhgg bvvccc</h2>
+          <hr>
+          <p class="finishing">Convenire gubergren ex vix. Habeo facete pri ei. Putent
+            maluisset intellegam vix te, vim prompta facilisi interesset te. 
+            Convenire gubergren ex vix. Habeo facete pri ei.
+             Putent maluisset intellegam vix 
+              <br><br>
+              vim prompta facilisi interesset te. 
+              An denique praesent pro, in torquatos adipiscing pro pro no odio modus. Mea malis summo ut.
+             Ex ipsum dolore assueverit nec, facer imperdiet et duo, cu postea laoreet vulputate has.
+           </p>
+      </div>
+
+  </div>
+ 
+  <div class="row">
+      <div class="col-lg-4 col-md-1">
+          <img src="img/home.jpg" class="home painter">
+         
+      </div>
+      <div class="col-lg-4 col-md-1">
+          <h2 class="finishingh2">pla po uyyg jhgg bvvccc</h2>
+          <hr>
+          <p class="finishing">Convenire gubergren ex vix. Habeo facete pri ei. Putent
+            maluisset intellegam vix te, vim prompta facilisi interesset te. 
+            Convenire gubergren ex vix. Habeo facete pri ei.
+             Putent maluisset intellegam vix 
+              <br><br>
+              vim prompta facilisi interesset te. 
+              An denique praesent pro, in torquatos adipiscing pro pro no odio modus. Mea malis summo ut.
+             Ex ipsum dolore assueverit nec, facer imperdiet et duo, cu postea laoreet vulputate has.
+           </p>
+      </div>
+      <div class="col-lg-4 col-md-1">
+          <img src="img/home2.jpg" class="home painter"> 
+      </div>
+
+  </div>
+  
+</div> 
+</section>
+   
+
+
+<div class="owl-carousel owl-theme mt-5">
+  <div class="owl-item">
+      <div class="card">
+          <div class="img-card"> <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> </div>
+          <div class="testimonial mt-4 mb-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis. </div>
+          <div class="name"> Denis Richie </div>
+      </div>
+  </div>
+  <div class="owl-item">
+      <div class="card">
+          <div class="img-card"> <img src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt=""> </div>
+          <div class="testimonial mt-4 mb-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis. </div>
+          <div class="name"> Lisa Sthalekar </div>
+      </div>
+  </div>
+  <div class="owl-item">
+      <div class="card">
+          <div class="img-card"> <img src="https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> </div>
+          <div class="testimonial mt-4 mb-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis. </div>
+          <div class="name"> Elizabith Richie </div>
+      </div>
+  </div>
+  <div class="owl-item">
+      <div class="card">
+          <div class="img-card"> <img src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> </div>
+          <div class="testimonial mt-4 mb-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis. </div>
+          <div class="name"> Daniel Xavier </div>
+      </div>
+  </div>
+  <div class="owl-item">
+      <div class="card">
+          <div class="img-card"> <img src="https://images.pexels.com/photos/1832959/pexels-photo-1832959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> </div>
+          <div class="testimonial mt-4 mb-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis. </div>
+          <div class="name"> Emma Watson </div>
+      </div>
+  </div>
+  <div class="owl-item">
+      <div class="card">
+          <div class="img-card"> <img src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""> </div>
+          <div class="testimonial mt-4 mb-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis. </div>
+          <div class="name"> Mohammad Imran </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+      <!-- Github -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
+
+
+
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    
+  
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>  
+
+<script src="js/js.js"></script>
+<script>
+  $(document).ready(function() {
+	$(".fa-search").click(function() {
+	   $(".togglesearch").toggle();
+	   $("input[type='text']").focus();
+	 });
+});
+</script>
+
+</body>
+</html>
